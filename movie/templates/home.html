@@ -30,5 +30,19 @@
 </div>
 {% endfor %}
 </div>
+<br/>
+<br/>
+<br/>
+
+<h2>Únete a nuestra lista de correo</h2>
+
+<form action="{% url 'signup' %}">
+    <div class="mb-3">
+        <label for="email" class="form-label">Ingresa tu correo:</label>
+        <input type="email" class="form-control" name="email" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Registrarse</button>
+</form>
 </div>
 {% endblock content %}
